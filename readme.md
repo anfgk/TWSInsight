@@ -172,9 +172,9 @@ npm run dev
 
 ## 🔮 향후 개선 계획
 
-- [ ] TypeScript 적용
-- [ ] React/Vue.js 마이그레이션
-- [ ] PWA 기능 강화
-- [ ] SEO 최적화
-- [ ] 테스트 코드 작성
+- TypeScript 적용
+- React/Vue.js 마이그레이션
+- PWA 기능 강화
+- SEO 최적화
+- 테스트 코드 작성
 
