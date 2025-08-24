@@ -2,7 +2,7 @@
 
 ## 📋 프로젝트 개요
 
-TWS(TWENTY FOUR SEVEN WITH US) 공식 웹사이트를 클론한 반응형 웹 프로젝트입니다. 
+TWS(TWENTY FOUR SEVEN WITH US) 공식 웹사이트를 웹 프로젝트입니다. 
 현대적인 웹 기술을 활용하여 다국어 지원, 반응형 디자인, 인터랙티브 요소를 구현했습니다.
 
 ## 🚀 주요 기능
@@ -12,11 +12,6 @@ TWS(TWENTY FOUR SEVEN WITH US) 공식 웹사이트를 클론한 반응형 웹 �
 - 실시간 언어 전환 기능
 - 브라우저 언어 자동 감지
 - 로컬 스토리지 기반 언어 설정 저장
-
-### 📱 반응형 디자인
-- 모바일, 태블릿, 데스크톱 최적화
-- CSS Grid & Flexbox 활용
-- 미디어 쿼리를 통한 반응형 레이아웃
 
 ### 🎨 인터랙티브 요소
 - Slick 슬라이더를 활용한 이미지 캐러셀
@@ -121,41 +116,19 @@ self.addEventListener('fetch', (event) => {
 
 ### 타이포그래피
 - Font: Montserrat (Google Fonts)
-- 반응형 폰트 크기 시스템
 
 ### 레이아웃
 - CSS Grid & Flexbox 조합
 - 모바일 퍼스트 접근법
 - 깔끔하고 현대적인 디자인
 
-## 📱 반응형 브레이크포인트
-
-- **Mobile**: 390px 이하
-- **Tablet**: 770px 이하
-- **Desktop**: 770px 초과
-
 ## 🚀 실행 방법
 
-1. 프로젝트 클론
+1. 실핼방법
 ```bash
-git clone [repository-url]
-cd tws_insight
-```
-
-2. 로컬 서버 실행
-```bash
-# Python 3
-python -m http.server 8000
-
-# Node.js
-npx serve .
-
-# 또는 Live Server 확장 프로그램 사용
-```
-
-3. 브라우저에서 접속
-```
-http://localhost:8000
+Live Server (VSCode 확장 프로그램) 실행 
+또는  
+npm run dev
 ```
 
 ## 🔧 주요 구현 포인트
@@ -185,7 +158,6 @@ http://localhost:8000
 ### 기술적 성장
 - **JavaScript ES6+** 모듈 시스템 활용
 - **CSS Grid & Flexbox** 마스터링
-- **반응형 웹 디자인** 구현 경험
 - **다국어 지원** 시스템 구축
 
 ### 문제 해결 능력
@@ -205,16 +177,4 @@ http://localhost:8000
 - [ ] PWA 기능 강화
 - [ ] SEO 최적화
 - [ ] 테스트 코드 작성
-
-## 📞 연락처
-
-- **Email**: [your-email@example.com]
-- **GitHub**: [your-github-username]
-- **Portfolio**: [your-portfolio-url]
-
----
-
-**프로젝트 기간**: 2024년 1월 - 2024년 2월  
-**개발 인원**: 1명 (개인 프로젝트)  
-**사용 기술**: HTML5, CSS3, JavaScript ES6+, i18next, Service Worker
 
