@@ -21,13 +21,7 @@
 - CSS/JS 파일 압축 및 최적화
 
 ## 기술 스택
-
-### Frontend
-`HTML5` `CSS3` `JavaScript` `Slick Slider`
-
-### 다국어 지원
-- **i18next** - 국제화 라이브러리
-- **i18next-browser-languagedetector** - 언어 감지
+`HTML5` `CSS3` `JavaScript` `Slick Slider` `i18next`
 
 ## 폴더 구조
 
