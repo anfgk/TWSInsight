@@ -1,9 +1,6 @@
-# TWS Official Website Clone
-
 ## 📋 프로젝트 개요
 
-TWS(TWENTY FOUR SEVEN WITH US) 공식 웹사이트를 웹 프로젝트입니다. 
-현대적인 웹 기술을 활용하여 다국어 지원, 반응형 디자인, 인터랙티브 요소를 구현했습니다.
+아이돌 투어스(TWS-TWENTY FOUR SEVEN WITH US)를 컨셉으로 만든 웹사이트 프로젝트입니다. 다국어 지원, 반응형 디자인, 인터랙티브 요소를 구현했습니다.
 
 ## 🚀 주요 기능
 
@@ -14,14 +11,13 @@ TWS(TWENTY FOUR SEVEN WITH US) 공식 웹사이트를 웹 프로젝트입니다.
 - 로컬 스토리지 기반 언어 설정 저장
 
 ### 🎨 인터랙티브 요소
-- Slick 슬라이더를 활용한 이미지 캐러셀
-- 부드러운 스크롤 애니메이션
+- react-slick을 활용한 캐러셀 구현
 - 모바일 햄버거 메뉴
 - 스크롤 기반 헤더 스타일 변경
 
 ### ⚡ 성능 최적화
 - Service Worker를 통한 오프라인 캐싱
-- 이미지 최적화 (WebP 포맷 사용)
+- 이미지 최적화 (webp 포맷 사용)
 - CSS/JS 파일 압축 및 최적화
 
 ## 🛠️ 기술 스택
@@ -35,10 +31,6 @@ TWS(TWENTY FOUR SEVEN WITH US) 공식 웹사이트를 웹 프로젝트입니다.
 ### 다국어 지원
 - **i18next** - 국제화 라이브러리
 - **i18next-browser-languagedetector** - 언어 감지
-
-### 성능 & 최적화
-- **Service Worker** - 오프라인 캐싱
-- **WebP** - 이미지 포맷 최적화
 
 ## 📁 프로젝트 구조
 
