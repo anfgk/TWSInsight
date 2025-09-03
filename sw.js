@@ -1,4 +1,4 @@
-const CACHE_NAME = "tws-website-v1";
+const CACHE_NAME = "tws-website-v2";
 
 const urlsToCache = [
   "/",
@@ -14,6 +14,7 @@ const urlsToCache = [
 ];
 
 self.addEventListener("install", (event) => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       console.log("캐시 저장소가 열렸습니다");
@@ -58,6 +59,6 @@ self.addEventListener("activate", (event) => {
           }
         })
       );
-    })
+    }).then(() => self.clients.claim())
   );
 });

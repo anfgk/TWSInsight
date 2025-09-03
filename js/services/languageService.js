@@ -5,12 +5,17 @@ export async function changeLanguage(lang) {
   try {
     await i18next.changeLanguage(lang);
     
-    updatePageContent();
+    if (typeof window !== 'undefined' && typeof window.updatePageContent === 'function') {
+      window.updatePageContent();
+      setTimeout(() => {
+        if (typeof window.updatePageContent === 'function') {
+          window.updatePageContent();
+        }
+      }, 0);
+    }
     
     updateLanguageButtons(lang);
-    
     updateCurrentLanguageDisplay(lang);
-    
     closeLanguageDropdown();
   } catch (error) {
     console.error("Error changing language:", error);
@@ -52,4 +57,10 @@ export function handleOutsideClick() {
 
 export function handleDropdownClick(event) {
   event.stopPropagation();
+}
+
+export function syncLanguageUIFromI18n() {
+  const currentLang = (i18next && i18next.language) ? i18next.language : 'ko';
+  updateLanguageButtons(currentLang);
+  updateCurrentLanguageDisplay(currentLang);
 }

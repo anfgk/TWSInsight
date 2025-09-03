@@ -6,9 +6,10 @@ export function updateNavigation() {
   
   menuItems.forEach((item) => {
     const key = extractKeyFromElement(item);
-    const translation = i18next.t(`nav.${key}`);
+    const navKey = key === 'intro' ? 'home' : key;
+    const translation = i18next.t(`nav.${navKey}`);
     
-    if (translation && translation !== `nav.${key}`) {
+    if (translation && translation !== `nav.${navKey}`) {
       updateTextContent(item, translation);
     }
   });
@@ -88,12 +89,14 @@ export function updateAlbumSection() {
 
   const albumItems = albumSection.querySelectorAll('.post_item');
   
-  albumItems.forEach((item, index) => {
-    const albumKey = SECTION_KEYS.ALBUM_KEYS[index];
+  albumItems.forEach((item) => {
+    const albumKey = item.getAttribute('data-album');
     if (!albumKey) return;
 
     const albumTitleElement = item.querySelector('h3');
-    updateTextContent(albumTitleElement, i18next.t(`album.albums.${albumKey}.title`));
+    if (albumTitleElement) {
+      updateTextContent(albumTitleElement, i18next.t(`album.albums.${albumKey}.title`));
+    }
 
     const description = item.querySelector('p');
     if (description) {

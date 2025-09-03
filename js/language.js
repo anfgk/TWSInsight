@@ -1,4 +1,4 @@
-import { changeLanguage, toggleLanguageDropdown, handleOutsideClick, handleDropdownClick } from './services/languageService.js';
+import { changeLanguage, toggleLanguageDropdown, handleOutsideClick, handleDropdownClick, syncLanguageUIFromI18n } from './services/languageService.js';
 import { updateNavigation, updateAboutSection, updateYoutubeSection, updateMemberSection, updateAlbumSection } from './services/sectionUpdater.js';
 import { safeQuerySelector, safeQuerySelectorAll } from './utils/dom.js';
 import { SELECTORS } from './config/constants.js';
@@ -53,9 +53,15 @@ function setupEventListeners() {
 async function initializeApp() {
   try {
     await i18next.initialized;
+
+    // 언어 변경 시 즉시 UI 갱신
+    i18next.on('languageChanged', () => {
+      updatePageContent();
+      syncLanguageUIFromI18n();
+    });
     
     updatePageContent();
-    
+    syncLanguageUIFromI18n();
     setupEventListeners();
     
     console.log('TWS Website i18n initialized successfully');
