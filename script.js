@@ -49,24 +49,20 @@ const slider = {
   },
 
   initMainSlider() {
-    import(
-      "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ).then(() => {
-      $(".myslider").slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-          {
-            breakpoint: 770,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
+    $(".myslider").slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 770,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
           },
-        ],
-      });
+        },
+      ],
     });
   },
 
