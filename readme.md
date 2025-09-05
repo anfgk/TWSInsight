@@ -34,17 +34,7 @@ npm run dev
 
 ## 기술 스택
 
-### Frontend
-
-- **HTML5** - 시맨틱 마크업
-- **CSS3** - Flexbox, Grid, CSS Variables
-- **JavaScript (ES6+)** - 모듈화된 구조
-- **Slick Slider** - 이미지 캐러셀
-
-### 다국어 지원
-
-- **i18next** - 국제화 라이브러리
-- **i18next-browser-languagedetector** - 언어 감지
+`HTML5` `CSS3` `JavaScript` `Slick Slider` `i18next` `i18next-browser-languagedetector`
 
 ## 프로젝트 구조
 
