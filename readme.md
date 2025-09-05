@@ -1,5 +1,3 @@
-# TWS Official Website Clone
-
 ## 프로젝트 개요
 
 아이돌 투어스(TWS-TWENTY FOUR SEVEN WITH US)를 컨셉으로 개발한 웹사이트 프로젝트입니다. 다국어 지원, 반응형 디자인, 인터랙티브 요소를 구현했습니다.
